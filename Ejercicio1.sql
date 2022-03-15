@@ -17,3 +17,8 @@ LEFT JOIN film f on i.film_id = f.film_id
 GROUP BY f.title
 HAVING rental_rate > 2
 # Duda: ¿qué diferencia hay entre usar WHERE y HAVING?
+# Respuesta: HAVING va de la mano con GROUP BY. Se necesita
+# para usar operaciones como SUM, COUNT, etc...
+# Por otro lado, WHERE valida campo por campo.
+# En este ejemplo no se nota la diferencia ya que ambos
+# producen el mismo resultado.
